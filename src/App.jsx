@@ -31,7 +31,7 @@ function App() {
         {
           todo.map((value,index)=>{
             return(
-              <div>
+              <div key={index}>
                 <input type="text" value={value} disabled />
                 <button onClick={()=>handleDelete(index)}>Delete</button>
               </div>
